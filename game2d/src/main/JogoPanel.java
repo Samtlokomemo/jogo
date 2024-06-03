@@ -25,8 +25,6 @@ public class JogoPanel extends JPanel implements Runnable, KeyListener {
     //MUNDO
     public final int maxWorldCol = 50;
     public final int maxWorldRow = 50;
-    public final int worldWidth = tileSize * maxWorldCol;
-    public final int worldHeight= tileSize * maxWorldRow;
 
     //FPS
     int FPS = 60;
@@ -45,7 +43,6 @@ public class JogoPanel extends JPanel implements Runnable, KeyListener {
         this.setDoubleBuffered(true);
         this.setFocusable(true);
         this.addKeyListener(keyH);
-
     }
 
     public void setupGame() {
